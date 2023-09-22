@@ -1,0 +1,70 @@
+#About{
+  /* margin: 10rem 0 2rem; */
+  margin-top: 0;
+  padding: 5rem 4rem 2rem;
+}
+#About h3{
+    margin:2rem 0 0;
+    padding: 1rem 2rem;
+}
+.aboutContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative !important;
+}
+.bubble{
+    width:40%;
+    min-width: 550px;
+    opacity: 0.5;
+}
+.charImg{
+    position: absolute !important;
+    left:6%;
+    top:auto;
+    width: 400px;
+    z-index: 1;
+}
+.Text{
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    width: max(50%,600px);
+    margin: 0;
+} 
+#About .space{
+    padding-right: 10px;
+}
+
+@media (max-width: 1040px){
+    .aboutContainer{
+        flex-direction: column;
+    }
+    .bubble{
+        width:50%;
+        min-width: 300px;
+        opacity: 0.5;
+    }
+    .charImg{
+        left:auto;
+        top:min(7%,50px);
+        width: 35%;
+        min-width: 200px;
+    }
+    .Text{
+        width: max(95%,300px);
+    }
+}
+@media (max-width: 580px){
+    #About, #skillsContainer{
+        padding: 5rem 36px 2rem;
+    }
+    .Text{
+        font-size: 16px;
+        letter-spacing: 0.6px;
+        line-height: 24px;
+    } 
+
+}

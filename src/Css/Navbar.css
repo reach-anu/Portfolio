@@ -1,0 +1,113 @@
+.navbarContainer{
+    position: sticky;
+    top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(147,51,234,.3);
+    margin: 24px 4rem;
+    padding: 0.5rem 2rem;
+    border-radius: 16px;
+    backdrop-filter: blur(12px);
+    z-index: 10;
+}
+.navbarContainer img{
+    height: 70px;
+}
+.navbarContainer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+.navbarContainer a{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0rem 1rem;
+    cursor: pointer;
+    display: flex;
+    padding: 7px;
+    position: relative;
+    opacity: 0.8;
+}
+.navbarContainer a:hover{
+    opacity: 1;
+    scale: 1.1;
+    transition: all 0.3s;
+}
+.navbarContainer a::after{
+    background-color: #ffffff;
+    content: "";
+    position: absolute;
+    height: 4px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    border-radius: 2px;
+    transition: all 0.2s;
+}
+.navbarContainer a:hover:after{
+    width: 100%;
+}
+.disabled, .menuIcon{
+display: none !important;
+}
+
+@media (max-width:785px) {
+    .navbarContainer img{
+    height: 45px;
+    }
+    .navbarContainer a{
+        padding: 0px 0px 3px;
+    }
+    .enabled{
+        display: none !important; 
+    }
+    .disabled{
+        display: flex !important;
+        font-size: 22px;
+    }
+    .iconsDisplay{
+        margin: 1px 7px;
+    }
+    .navbarContainer a::after{
+        height: 2px;
+    }  
+}
+
+@media (max-width:580px) {
+    .navbarContainer{
+        margin: 24px 36px;
+        padding: 10px 2rem;
+    } 
+    .disabled{
+        display: none !important;
+    } 
+    .menuIcon{
+        display: block !important;
+        font-size: 25px;
+    }
+    .navbarContainer ul{
+        flex-direction: column;
+        top:60px;
+        left: 0;
+        position: absolute;
+        background-color: rgba(147,51,234,.3);
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px;
+        width: 90%;
+        margin-right: 10%;
+        border-radius: 16px;
+        background-color: rgb(53 27 87);
+    }
+    .navbarContainer ul li{
+        justify-content: center;
+        margin-left: -10%;
+        padding: 30px;
+    }
+
+}
+
+

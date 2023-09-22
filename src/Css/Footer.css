@@ -1,0 +1,31 @@
+.footerContainer{
+    margin: 4rem 4rem 0; 
+    padding: 1.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgb(107 114 128);
+}
+
+.footerContainer p{
+    color: rgb(107 114 128);
+}
+
+.footerIcons{
+    margin: 8px;
+    font-size: 20px;
+}
+.footerIcons:hover{
+    transition: all 0.3s;
+    opacity: 0.5;
+}
+
+@media (max-width: 500px)
+{
+    .footerContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 4rem 36px 0; 
+    }
+}

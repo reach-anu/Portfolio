@@ -1,0 +1,25 @@
+.resumeContainer{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px auto;
+}
+.myResume{
+    padding-bottom: 50px;
+}
+.resumeContainer a{
+    padding: 1rem 2rem;
+    border-radius: 15px;
+    color:white;
+    border: 1px solid white; 
+}
+.resumeContainer a:hover{
+    background-image: linear-gradient(to right,var(--tw-gradient-stops));
+    --tw-gradient-from: #9333ea;
+    --tw-gradient-to: #3b82f6;
+    --tw-gradient-stops: var(--tw-gradient-from),var(--tw-gradient-to);
+    border: 1px solid transparent; 
+    transition:all ease-in-out 1s;
+}

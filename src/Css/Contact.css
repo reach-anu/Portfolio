@@ -1,0 +1,97 @@
+#Contact{
+    margin: 4rem;
+    padding-top: 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+#Contact img{
+    width: 30%;
+    min-width: 300px;
+}
+.contactInfoContainer{
+    width: 40%;
+    min-width: 470px;   
+}
+#Contact h2{
+    color:transparent;
+    background-image: linear-gradient(to right,var(--tw-gradient-stops));
+    --tw-gradient-from: #9333ea;
+    --tw-gradient-to: #3b82f6;
+    --tw-gradient-stops: var(--tw-gradient-from),var(--tw-gradient-to);
+    background-clip: text;
+    font-size: 3rem;
+    margin: 0px;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+#Contact p{
+    font-size: 1.5rem;
+    line-height: inherit;
+}
+.contactInfoContainer h4{
+    font-size: 1.5rem;
+    line-height: inherit;
+    font-weight: 400;
+    display: flex;
+    gap:1rem;
+    align-items: center;
+    margin: 1rem 0;
+    padding-bottom: 1.5rem;
+}
+.contactInfoContainer span{
+    padding: 1rem 2rem;
+    border-radius: 15px;
+    color:white;
+    border: 1px solid white; 
+}
+.contactInfoContainer span:hover{
+    background-image: linear-gradient(to right,var(--tw-gradient-stops));
+    --tw-gradient-from: #9333ea;
+    --tw-gradient-to: #3b82f6;
+    --tw-gradient-stops: var(--tw-gradient-from),var(--tw-gradient-to);
+    border: 1px solid transparent; 
+    transition:all ease-in-out 1s;
+}
+@media (max-width: 930px)
+{
+    #Contact img{
+        width: 20%;
+        min-width: 100px;
+        position: absolute;
+        bottom: -16px;
+        right: 0;
+    }
+}
+
+@media (max-width: 780px){
+    #Contact h2{
+        font-size: 2.5rem;
+    }
+
+    .contactInfoContainer h4, #Contact p{
+        font-size: 20px;
+    }
+    .contactInfoContainer{
+        width: 100%;
+        min-width: 280px;
+    }    
+
+}
+@media (max-width: 580px) {
+    #Contact img{
+        display: none;
+    }
+    #Contact h2{
+        font-size: 2.2rem;
+    }
+
+    .contactInfoContainer h4, #Contact p{
+        font-size: 16px;
+    }
+    .contactInfoContainer span{
+        padding: 1rem;
+    }
+}

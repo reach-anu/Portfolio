@@ -1,0 +1,110 @@
+#Project{
+    /* margin: 10rem 0 2rem; */
+    margin-top: 5rem;
+    padding: 5rem 4rem 2rem;
+    /* min-height: 500px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#Project h3{
+  margin:2rem 0 0;
+  padding: 2rem;
+}
+.projectCardContainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: space-evenly !important; 
+    gap: 30px;
+    padding: 0 2rem;
+}
+
+/* ProjectCard */
+.projectCard{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* align-items: center; */
+    margin: 40px auto;
+    width: 300px;
+    transition: 0.25s ease;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.projectCard:hover > a > div > img{
+    scale: 1.1; 
+    opacity: 0.8;
+}
+.projectCard:hover > a > div{
+    background-color: transparent;
+}
+.projectImageContainer{
+    display: flex;
+    width: 300px;
+    height: 196px;
+    border-radius: 10px;
+    background-color: rgba(245, 245, 245, 0.266);
+    position: relative;
+}
+.projectCard img{
+    width: 280px;
+    border-radius: 10px;
+    transition: 0.25s ease;
+    margin: auto;
+}
+/* .projectCard img:hover{
+    scale: 1.099;
+} */
+.viewIcon{
+    position: absolute;
+    left: 42%;
+    top: 45%;
+    /* display: none; */
+    font-size: 25px;
+    background-color: rgba(195, 190, 206, 0.765);;
+    padding: 5px;
+    border-radius: 10px;
+    display: none;
+    opacity: 0.8;
+}
+.projectCard:hover > a > div > .viewIcon{
+    display: block;
+}
+.projectInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.projectInfo h2{
+    /* margin-bottom: 0; */
+    color: hsl(0, 0%, 98%);
+    font-weight: 500;
+}
+.projectCard p{
+    color: hsla(0, 0%, 84%, 0.7);
+    font-weight: 400;
+    line-height: inherit;
+    font-size: 15px;
+    margin-top: 0;
+}
+
+.githubIcon{
+    font-size: 25px;
+}
+
+@media (max-width: 1130px){
+    .projectCardContainer{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width: 800px) {
+    #Project{
+        padding: 5rem 2rem 2rem;
+    }
+    .projectCardContainer{
+        display: block;
+        padding: 0;
+    }
+    
+}
