@@ -10,8 +10,8 @@ const ProjectCard = ({projectName,projectImage}) => {
     TincatWebsite : "https://reach-anu.github.io/tincat/",
 
     PortfolioDesc : "Dynamic personal portfolio showcasing skills and projects, built with React.js for a captivating and interactive web experience.",
-    PortfolioGithub : "",
-    PortfolioWebsite : "",
+    PortfolioGithub : "https://github.com/reach-anu/Portfolio",
+    PortfolioWebsite : "https://anushaka.netlify.app/",
   }
 
 

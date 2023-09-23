@@ -41,20 +41,20 @@ const Skills = () => {
     className='skillsBox'
     initial={{opacity: 0}}
     whileInView={{opacity: 1}}
-    transition={{ duration: 2}}>
+    transition={{ duration: 1}}>
         <IconContext.Provider value={{className: 'skillIcons'}}>
-        <IoLogoJavascript />
-        <IoLogoReact />
-        <IoLogoNodejs />
-        <SiExpress />
-        <FaGitAlt />
-        <FaGithub />
-        <IoLogoCss3 />
-        <FaBootstrap />
-        <IoLogoHtml5 />
-        <FaFigma />
-        <SiVisualstudio />
-        <SiCplusplus />
+        <IoLogoJavascript title="Javascript"/>
+        <IoLogoReact title="ReactJS" />
+        <IoLogoNodejs title="NodeJS" />
+        <SiExpress title="ExpressJS" />
+        <FaGitAlt title="Git" />
+        <FaGithub title="Github" />
+        <IoLogoCss3 title="CSS3" />
+        <FaBootstrap title="Bootstrap" />
+        <IoLogoHtml5 title="HTML5" />
+        <FaFigma title="Figma" />
+        <SiVisualstudio title="Visual studio code" />
+        <SiCplusplus title="C++" />
         </IconContext.Provider>
     </motion.div>
     </div>

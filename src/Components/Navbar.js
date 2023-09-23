@@ -43,10 +43,10 @@ const Navbar = () => {
     )}
     { isClicked && (
       <ul>
-      <li>About</li>
-      <li>Project</li>
-      <li>Contact</li>
-      <li>Resume</li>
+      <li><NavHashLink to='/#About'><AiOutlineUser />&nbsp; About</NavHashLink></li>
+      <li><NavHashLink to='/#Project'><BsCodeSlash />&nbsp; Project</NavHashLink></li>
+      <li><NavHashLink to='/#Contact'><IoCallOutline />&nbsp; Contact</NavHashLink></li>
+      <li><NavHashLink to="/Resume"><IoDocumentTextOutline />&nbsp; Resume</NavHashLink></li>
       </ul>
     )
     }

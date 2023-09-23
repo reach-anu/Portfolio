@@ -1,7 +1,7 @@
 .homeContainer{
     margin: 6rem 6rem 0;
-    padding-bottom: 4rem;
     line-height: 4rem;
+    height: 430px;
 }
 .homeContainer img{
     width: 520px;
@@ -25,26 +25,6 @@
 .homeInfoContainer{
     position: relative;
 }
-.homeInfoContainer h3 span:hover{
-    animation : rubberband 800ms  ease-out;
-    color: #D0BFFF;
-    display: inline-block;
-}
-@keyframes rubberband {
-    0% {
-        transform: scale(1, 1);
-    }
-    25% {
-        transform: scale(1.3, 0.6);
-    }
-
-    50% {
-        transform: scale(1.1, 0.9);
-    }
-    100% {
-        transform: scale(1, 1);
-}
-}
 .MyName{
     color:transparent;
     background-image: linear-gradient(to right,var(--tw-gradient-stops));
@@ -57,7 +37,7 @@
     font-weight: 700;
 }
 .connectIconsDisplay{
-    margin-top: 3.5rem;
+    margin-top: 2.5rem;
     margin-right: 1rem;
     font-size: 35px;
 }
@@ -112,8 +92,8 @@
         font-size: 2.5rem;
     }
     .connectIconsDisplay{
-        font-size: 2.3rem;
-        margin-top: 2rem;
+        font-size: 2rem;
+        margin: 2rem 0.5rem;
     }
     .homeInfoContainer img{
         right: auto;
@@ -129,7 +109,7 @@
         font-size: 1.9rem;
     }
     .connectIconsDisplay{
-        font-size: 1.9rem;
+        font-size: 1.5rem;
     }
 
     .homeContainer .space{

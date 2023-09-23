@@ -2,8 +2,7 @@ import React from 'react'
 import '../Css/Home.css'
 import { motion } from 'framer-motion'
 import {FaGithubAlt} from "react-icons/fa"
-import {AiFillLinkedin}from "react-icons/ai"
-import {BiLogoInstagramAlt} from "react-icons/bi"
+import {AiFillLinkedin, AiFillMail}from "react-icons/ai"
 import { IconContext } from 'react-icons'
 import homegif from "../Images/home.svg"
 import cat from "../Images/codingcat.png"
@@ -25,14 +24,11 @@ const Home = () => {
                 <span className='space'></span> 
                 <span>a</span>
                 <span className='space'></span> 
-                <span>F</span>
-                <span>r</span>
-                <span>o</span>
-                <span>n</span>
-                <span>t</span>
+                <span>R</span>
                 <span>e</span>
-                <span>n</span>
-                <span>d</span>
+                <span>a</span>
+                <span>c</span>
+                <span>t</span>
                 <span className='space'></span>
                 <span>D</span> 
                 <span>e</span> 
@@ -77,8 +73,8 @@ const Home = () => {
             </h3>
             <IconContext.Provider value={{ className: 'connectIconsDisplay' }}>
               <a href="https://github.com/reach-anu" target="_blank"><FaGithubAlt/></a>
-              <a><BiLogoInstagramAlt /></a>
               <a href="https://www.linkedin.com/in/anushaka-rajput-0036b322b" target="_blank"><AiFillLinkedin/></a>
+              <a href="mailto:reachanuuu@gmail.com"><AiFillMail /></a>
             </IconContext.Provider>
             <img src={cat} />
         </motion.div>

@@ -108,3 +108,21 @@
     }
     
 }
+@media (max-width: 580px)
+{
+    #Project h3{
+        padding: 1rem 0.5rem;
+    }
+}
+@media (max-width: 400px){
+    .projectCard{
+        width: 260px;
+    }
+    .projectImageContainer{
+        width: 260px !important;
+        height: 185px !important;
+    }
+    .projectCard img{
+        width: 240px;
+    }
+}
