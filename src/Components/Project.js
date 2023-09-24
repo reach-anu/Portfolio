@@ -4,6 +4,7 @@ import "../Css/Project.css"
 import ProjectCard from "./ProjectCard"
 import tincat from '../Images/tincat.png'
 import portfolio from "../Images/portfolio.png"
+import wiggles from "../Images/wiggles.png"
 
 const Project = () => {
   return (
@@ -24,8 +25,9 @@ const Project = () => {
     </h3>
     </motion.div>
     <div className='projectCardContainer'>
-        <ProjectCard projectName="Portfolio" projectImage={portfolio}/>
-        <ProjectCard projectName="Tincat" projectImage={tincat}/>
+      <ProjectCard projectName="Wiggles" projectImage={wiggles}/>
+      <ProjectCard projectName="Portfolio" projectImage={portfolio}/>
+      <ProjectCard projectName="Tincat" projectImage={tincat}/>
     </div>
     </div>
   )

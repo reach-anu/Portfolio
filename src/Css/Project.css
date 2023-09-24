@@ -93,12 +93,12 @@
     font-size: 25px;
 }
 
-@media (max-width: 1130px){
+@media (max-width: 1190px){
     .projectCardContainer{
         grid-template-columns: repeat(2,1fr);
     }
 }
-@media (max-width: 800px) {
+@media (max-width: 860px) {
     #Project{
         padding: 5rem 2rem 2rem;
     }

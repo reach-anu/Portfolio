@@ -12,6 +12,11 @@ const ProjectCard = ({projectName,projectImage}) => {
     PortfolioDesc : "Dynamic personal portfolio showcasing skills and projects, built with React.js for a captivating and interactive web experience.",
     PortfolioGithub : "https://github.com/reach-anu/Portfolio",
     PortfolioWebsite : "https://anushaka.netlify.app/",
+
+    WigglesDesc:"A comprehensive pet-friendly website which serves as a one-stop destination for all the pet. A group project made in a team of four. ",
+    WigglesGithub: "https://github.com/DevanshSahni/Wiggles",
+    WigglesWebsite:"https://wiggles.vercel.app",
+    
   }
 
 

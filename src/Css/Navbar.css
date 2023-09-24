@@ -89,25 +89,37 @@ display: none !important;
         font-size: 25px;
     }
     .navbarContainer ul{
+        display: flex;
         flex-direction: column;
+        align-items: center;
         top:60px;
         left: 0;
         position: absolute;
-        background-color: rgba(147,51,234,.3);
-        justify-content: center;
-        align-items: center;
-        margin-left: 0px;
-        width: 90%;
-        margin-right: 10%;
+        width: 100%;
         border-radius: 16px;
         background-color: rgb(53 27 87);
+        padding: 0px;
     }
     .navbarContainer ul li{
-        justify-content: center;
-        margin-left: -10%;
-        padding: 30px;
+        padding: 30px 0;
     }
 
+}
+.dropdown_menu{
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center;
+}
+
+@keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(1)
+    }
 }
 
 
