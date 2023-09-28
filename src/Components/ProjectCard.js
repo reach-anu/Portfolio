@@ -13,10 +13,13 @@ const ProjectCard = ({projectName,projectImage}) => {
     PortfolioGithub : "https://github.com/reach-anu/Portfolio",
     PortfolioWebsite : "https://anushaka.netlify.app/",
 
+    KeeperDesc : "A simple clone of Google keep made using React.js and react-props", 
+    KeeperGithub : "https://github.com/reach-anu/Keeper",
+    KeeperWebsite : "https://keeper-anushaka.netlify.app/", 
+
     WigglesDesc:"A comprehensive pet-friendly website which serves as a one-stop destination for all the pet. A group project made in a team of four. ",
     WigglesGithub: "https://github.com/DevanshSahni/Wiggles",
     WigglesWebsite:"https://wiggles.vercel.app",
-    
   }
 
 

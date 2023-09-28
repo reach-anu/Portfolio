@@ -8,7 +8,7 @@ import "../Css/Footer.css"
 const Footer = () => {
   return (
     <div className='footerContainer'>
-        <p>Developed by Anushaka</p>
+        <p>Developed &amp; Designed by Anushaka</p>
         <div>
         <IconContext.Provider value={{ className: 'footerIcons' }}>
             <a href="mailto:reachanuuu@gmail.com"><AiFillMail /></a>

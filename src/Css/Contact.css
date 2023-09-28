@@ -6,7 +6,7 @@
     justify-content: space-evenly;
     align-items: center;
     position: relative;
-    min-height: 350px;
+    min-height: 400px;
 }
 #Contact img{
     width: 30%;
@@ -17,12 +17,6 @@
     min-width: 470px;   
 }
 #Contact h2{
-    color:transparent;
-    background-image: linear-gradient(to right,var(--tw-gradient-stops));
-    --tw-gradient-from: #9333ea;
-    --tw-gradient-to: #3b82f6;
-    --tw-gradient-stops: var(--tw-gradient-from),var(--tw-gradient-to);
-    background-clip: text;
     font-size: 3rem;
     margin: 0px;
     margin-bottom: 1.5rem;
@@ -50,11 +44,9 @@
 }
 .contactInfoContainer span:hover{
     background-image: linear-gradient(to right,var(--tw-gradient-stops));
-    --tw-gradient-from: #9333ea;
-    --tw-gradient-to: #3b82f6;
     --tw-gradient-stops: var(--tw-gradient-from),var(--tw-gradient-to);
     border: 1px solid transparent; 
-    transition:all ease-in-out 1s;
+    transition:all ease-in-out 0.5s;
 }
 @media (max-width: 930px)
 {
@@ -62,7 +54,7 @@
         width: 20%;
         min-width: 100px;
         position: absolute;
-        bottom: -16px;
+        bottom: 0;
         right: 0;
     }
 }
@@ -71,30 +63,31 @@
     #Contact h2{
         font-size: 2.5rem;
     }
-
     .contactInfoContainer h4, #Contact p{
         font-size: 20px;
     }
     .contactInfoContainer{
         width: 100%;
         min-width: 280px;
-    }    
+        padding: 2rem;
+    }  
+    #Contact img{
+        display: none;
+    }  
 
 }
 @media (max-width: 580px) {
     #Contact{
-        margin: 2rem;
+        margin: 0rem;
+        padding: 0 8px;
         justify-content: center;
-    }
-    #Contact img{
-        display: none;
     }
     #Contact h2{
         font-size: 2.2rem;
     }
-
     .contactInfoContainer h4, #Contact p{
         font-size: 16px;
+        gap: 0.5rem
     }
     .contactInfoContainer span{
         padding: 1rem;

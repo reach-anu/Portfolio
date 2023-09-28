@@ -25,13 +25,7 @@
 .homeInfoContainer{
     position: relative;
 }
-.MyName{
-    color:transparent;
-    background-image: linear-gradient(to right,var(--tw-gradient-stops));
-    --tw-gradient-from: #9333ea;
-    --tw-gradient-to: #3b82f6;
-    --tw-gradient-stops: var(--tw-gradient-from),var(--tw-gradient-to);
-    background-clip: text;
+.myName{
     font-size: 3.2rem;
     margin: 0px;
     font-weight: 700;
@@ -88,7 +82,7 @@
     .homeContainer h3{
         font-size: 2rem;
     }
-    .MyName{
+    .myName{
         font-size: 2.5rem;
     }
     .connectIconsDisplay{
@@ -105,7 +99,7 @@
     .homeContainer h3{
         font-size: 1.6rem;
     }
-    .MyName{
+    .myName{
         font-size: 1.9rem;
     }
     .connectIconsDisplay{

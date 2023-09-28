@@ -1,11 +1,12 @@
 #About{
-  /* margin: 10rem 0 2rem; */
   margin-top: 0;
   padding: 5rem 4rem 2rem;
+  min-height: 550px;
 }
 #About h3{
     margin:2rem 0 0;
     padding: 1rem 2rem;
+    /* color: #8061d5; */
 }
 .aboutContainer{
     display: flex;
@@ -14,18 +15,48 @@
     align-items: center;
     position: relative !important;
 }
-.bubble{
-    width:40%;
-    min-width: 550px;
-    opacity: 0.5;
+.tilt{
+    width: 45%;
+    min-width: 300px;
+    transition: 0.2s all;
 }
-.charImg{
-    position: absolute !important;
-    left:6%;
-    top:auto;
-    width: 400px;
-    z-index: 1;
+.aboutImg{
+    width: 100%;
 }
+.floating {
+    -webkit-animation: movebounce 2s linear infinite;
+    animation: movebounce 3s linear infinite;
+  }
+  
+  @-webkit-keyframes movebounce {
+    0% {
+      -webkit-transform: translateY(0px);
+      transform: translateY(0px);
+    }
+    50% {
+      -webkit-transform: translateY(20px);
+      transform: translateY(20px);
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+      transform: translateY(0px);
+    }
+  }
+  
+  @keyframes movebounce {
+    0% {
+      -webkit-transform: translateY(0px);
+      transform: translateY(0px);
+    }
+    50% {
+      -webkit-transform: translateY(20px);
+      transform: translateY(20px);
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+      transform: translateY(0px);
+    }
+  }
 .Text{
     font-size: 20px;
     font-weight: 500;
@@ -34,6 +65,13 @@
     width: max(50%,600px);
     margin: 0;
 } 
+.highlight{
+    color: #8061d5;
+    transition: all 0.5s;
+}
+.highlight:hover{
+     color: #D0BFFF;
+}
 #About .space{
     padding-right: 10px;
 }
@@ -42,19 +80,12 @@
     .aboutContainer{
         flex-direction: column;
     }
-    .bubble{
-        width:50%;
-        min-width: 300px;
-        opacity: 0.5;
-    }
-    .charImg{
-        left:auto;
-        top:min(7%,50px);
-        width: 35%;
-        min-width: 200px;
+    .aboutImg{
+        min-width: 280px;
     }
     .Text{
-        width: max(95%,300px);
+        width: max(85%,250px);
+        padding: 0 2rem;
     }
 }
 @media (max-width: 580px){
@@ -68,6 +99,7 @@
         font-size: 16px;
         letter-spacing: 0.6px;
         line-height: 24px;
+        width: 85%;
     } 
 
 }

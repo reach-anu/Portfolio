@@ -11,6 +11,8 @@ body {
   overflow-x: hidden;
   line-height: inherit;
   box-sizing: border-box;
+  --tw-gradient-from: #9333ea;
+  --tw-gradient-to: #3b82f6;
 }
 *,html{
   scroll-behavior: smooth;
@@ -27,6 +29,12 @@ body {
   width: 300px;
   height: 300px;
 }
+.gradient{
+  color:transparent;
+  background-image: linear-gradient(to right,var(--tw-gradient-stops));
+  --tw-gradient-stops: var(--tw-gradient-from),var(--tw-gradient-to);
+  background-clip: text;
+}
 a{
   text-decoration: none;
   color: white;
@@ -35,6 +43,7 @@ h3{
   color:#fff;
   font-weight: 700;
   font-size: 3rem;
+  cursor: default;
 }
 h3 span:hover{
   animation : rubberband 800ms  ease-out;
@@ -70,7 +79,5 @@ h3 span:hover{
     font-weight: 600;
     font-size: 2.2rem;
   }
-  
 
 }
-

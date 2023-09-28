@@ -5,6 +5,7 @@ import ProjectCard from "./ProjectCard"
 import tincat from '../Images/tincat.png'
 import portfolio from "../Images/portfolio.png"
 import wiggles from "../Images/wiggles.png"
+import keeper from "../Images/keeper.png"
 
 const Project = () => {
   return (
@@ -27,6 +28,7 @@ const Project = () => {
     <div className='projectCardContainer'>
       <ProjectCard projectName="Wiggles" projectImage={wiggles}/>
       <ProjectCard projectName="Portfolio" projectImage={portfolio}/>
+      <ProjectCard projectName="Keeper" projectImage={keeper}/>
       <ProjectCard projectName="Tincat" projectImage={tincat}/>
     </div>
     </div>
