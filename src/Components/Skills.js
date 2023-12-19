@@ -3,40 +3,23 @@ import "../Css/Skills.css"
 import { motion } from 'framer-motion'
 import { IconContext } from 'react-icons'
 import {IoLogoJavascript, IoLogoReact, IoLogoNodejs,IoLogoCss3, IoLogoHtml5} from "react-icons/io5"
-import {SiExpress, SiVisualstudio, SiCplusplus} from "react-icons/si"
+import {SiExpress, SiVisualstudio, SiCplusplus, SiPostman} from "react-icons/si"
 import {FaBootstrap, FaGitAlt, FaGithub, FaFigma} from "react-icons/fa"
 
 const Skills = () => {
+  const skillsHeading="Professional Skills";
   return (
-    <div id='skillContainer'>
+    <div className='skillsContainerWrapper' id='Skills'>
       <motion.div 
-      id='Skills'
+      className='skillsContainer'
       initial={{opacity: 0, y:[-50], scale: 0}}
       whileInView={{opacity: 1, y:[0] ,scale: 1}}
       transition={{ duration: 0.8 }}>
       <h3>
-        <span>P</span>
-        <span>r</span>
-        <span>o</span>
-        <span>f</span>
-        <span>e</span>
-        <span>s</span>
-        <span>s</span>
-        <span>i</span>
-        <span>o</span>
-        <span>n</span>
-        <span>a</span>
-        <span>l</span>
-        <span className='space'></span>
-        <span>S</span>
-        <span>k</span>
-        <span>i</span>
-        <span>l</span>
-        <span>l</span>
-        <span>s</span>
+        {skillsHeading.split("").map((char)=> char===" " ? ( window.innerWidth===392 ? <br/> : " " ) : <span>{char}</span>)}
       </h3>
       </motion.div>
-      <motion.div 
+      <motion.div  
       className='skillsBox'
       initial={{opacity: 0}}
       whileInView={{opacity: 1}}
@@ -55,6 +38,7 @@ const Skills = () => {
           <FaFigma title="Figma" />
           <SiVisualstudio title="Visual studio code" />
           <SiCplusplus title="C++" />
+          <SiPostman title="Postman" />
         </IconContext.Provider>
       </motion.div>
     </div>

@@ -6,20 +6,25 @@ import "../Css/Contact.css"
 
 const Contact = () => {
   return (
-    <div id='Contact'>
+    <div className='contactContainerWrapper' id='Contact'>
       <motion.img 
       initial={{ x: 0, opacity: 0}}
       whileInView={{ x: [-100,0], y:[0], opacity: 1}}
       transition={{ duration: 1 }}
       src={contact} />
+
       <motion.div className='contactInfoContainer'
       initial={{ x: 0, opacity: 0}}
       whileInView={{ x: [100,0], y:[0], opacity: 1}}
       transition={{ duration: 1 }}>
+
         <h2 className='gradient'>Don't be a Stranger!</h2>
-        <p>Shoot me an email if you think we're a great fit and would like to work with me. Let's have a great time while we're at it.</p>
-        <h4><AiFillMail/> reachanuuu@gmail.com</h4>
-        <a href="mailto:reachanuuu@gmail.com"><span>Get In Touch</span></a>
+        <p>Shoot me an email if you think we're a great fit and would like to work with me. Let's have a great time while we're at it.
+          <br/><br/>
+          <AiFillMail className='contactSectionMailIcon'/> reachanuuu@gmail.com
+        </p>
+        <a href="mailto:reachanuuu@gmail.com">Get In Touch</a>
+
       </motion.div>
     </div>
   )

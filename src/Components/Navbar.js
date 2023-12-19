@@ -18,14 +18,14 @@ const Navbar = () => {
 
   return (
     <nav className='navbarContainer'>
-    <span><img onClick={()=>window.scrollTo(0,0)} src={memoji} /></span>
-    <ul className='enabled'>
+    <img onClick={()=>window.scrollTo(0,0)} src={memoji} />
+    <ul className='maxScreenSizeMenu'>
       <li><NavHashLink to='/#About'>About</NavHashLink></li>
       <li><NavHashLink to='/#Project'>Project</NavHashLink></li>
       <li><NavHashLink to='/#Contact'>Contact</NavHashLink></li>
       <li><NavHashLink to="/Resume">Resume</NavHashLink></li>
     </ul>
-    <ul className='disabled'>
+    <ul className='midScreenSizeMenu'>
       <IconContext.Provider value={{ className: 'iconsDisplay' }}> 
       <li><NavHashLink to='/#About'><AiOutlineUser /></NavHashLink></li>
       <li><NavHashLink to='/#Project'><BsCodeSlash /></NavHashLink></li>
@@ -34,11 +34,11 @@ const Navbar = () => {
       </IconContext.Provider>
     </ul>
     { !isClicked && (
-    <IoReorderThreeOutline className='menuIcon' onClick={HandleClick} /> 
+    <IoReorderThreeOutline className='threeOutlineIcon' onClick={HandleClick} /> 
     )}
 
     { isClicked && (
-    <RxCross1 className='iconsDisplay' onClick={HandleClick} />
+    <RxCross1 className='crossIcon' onClick={HandleClick} />
     )}
     { isClicked && (
       <ul className="dropdown_menu" onClick={HandleClick}>

@@ -5,7 +5,7 @@ import { FaGithubAlt } from 'react-icons/fa'
 
 const ProjectCard = ({projectName,projectImage}) => {
   const desc = {
-    TincatDesc : "A tinder website for Cats developed using HTML, CSS and Bootstrap. It is completely responsive",
+    TincatDesc : "A landing page website for Cats developed using HTML, CSS and Bootstrap. It is completely responsive",
     TincatGithub : "https://github.com/reach-anu/tincat",
     TincatWebsite : "https://reach-anu.github.io/tincat/",
 
@@ -33,13 +33,13 @@ const ProjectCard = ({projectName,projectImage}) => {
       <div className='projectImageContainer'>
         <img src={projectImage} />
         <AiOutlineEye className='viewIcon'/>
-        </div>
-          <div className='projectInfo'>
-          <h2>{projectName}</h2>
-          <a href={desc[projectName + 'Github']} target="_blank"><FaGithubAlt className='githubIcon'/></a>
-          </div>
-          <p>{desc[projectName + 'Desc']}</p>
-        </a>
+      </div>
+      <div className='projectInfo'>
+        <h2>{projectName}</h2>
+        <a href={desc[projectName + 'Github']} target="_blank"><FaGithubAlt className='githubIcon'/></a>
+      </div>
+      <p>{desc[projectName + 'Desc']}</p>
+      </a>
     </motion.div>
   )
 }

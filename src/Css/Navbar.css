@@ -1,6 +1,4 @@
 .navbarContainer{
-    position: sticky;
-    top: 24px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -10,32 +8,38 @@
     border-radius: 16px;
     backdrop-filter: blur(12px);
     z-index: 10;
+    position: sticky;
+    top: 24px;
 }
+
 .navbarContainer img{
     height: 70px;
 }
-.navbarContainer ul{
+
+.maxScreenSizeMenu{
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    list-style: none;
+    justify-content: space-between;
+    align-items: center;
     scroll-behavior: smooth;
+    gap: 2.5rem;
 }
+
 .navbarContainer a{
     font-size: 1.2rem;
     font-weight: 600;
-    margin: 0rem 1rem;
-    cursor: pointer;
-    display: flex;
-    padding: 7px;
+    padding: 7px 0px;
     position: relative;
     opacity: 0.8;
+    line-height: 1.75rem;
 }
+
 .navbarContainer a:hover{
     opacity: 1;
     scale: 1.1;
     transition: all 0.3s;
+    cursor: pointer;
 }
+
 .navbarContainer a::after{
     background-color: #ffffff;
     content: "";
@@ -47,79 +51,100 @@
     border-radius: 2px;
     transition: all 0.2s;
 }
+
 .navbarContainer a:hover:after{
     width: 100%;
 }
-.disabled, .menuIcon{
+
+.midScreenSizeMenu, .threeOutlineIcon, .crossIcon, .dropdown_menu{
 display: none !important;
 }
 
 @media (max-width:785px) {
-    .navbarContainer img{
-    height: 45px;
-    }
-    .navbarContainer a{
-        padding: 0px 0px 3px;
-    }
-    .enabled{
+
+    .maxScreenSizeMenu{
         display: none !important; 
     }
-    .disabled{
+
+    .midScreenSizeMenu{
         display: flex !important;
-        font-size: 22px;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2.5rem;
     }
+
     .iconsDisplay{
-        margin: 1px 7px;
+        font-size: 1.5rem;
     }
+
+    .navbarContainer li{
+        padding: 1px;
+    }
+
     .navbarContainer a::after{
         height: 2px;
     }  
+
 }
 
 @media (max-width:580px) {
+
+    .navbarContainer img{
+        height: 45px;
+    }
+
     .navbarContainer{
         margin: 24px;
         padding: 10px 1rem;
     } 
-    .disabled{
+
+    .midScreenSizeMenu{
         display: none !important;
-    } 
-    .menuIcon{
+    }
+
+    .threeOutlineIcon, .crossIcon{
         display: block !important;
         font-size: 25px;
     }
-    .navbarContainer ul{
-        display: flex;
+
+    .dropdown_menu{
+        display: flex !important;
         flex-direction: column;
+        justify-content: space-evenly;
         align-items: center;
-        top:60px;
+        top: 5rem;
         left: 0;
+        gap: 3rem;
         position: absolute;
         width: 100%;
-        border-radius: 16px;
+        border-radius: 1.5rem;
         background-color: rgb(53 27 87);
-        padding: 0px;
+        padding: 1.5rem 0px;
     }
+
+    .dropdown_menu{
+        animation: growDown 300ms ease-in-out forwards;
+        transform-origin: top center;
+    }
+    
+    @keyframes growDown {
+        0% {
+            transform: scaleY(0)
+        }
+        80% {
+            transform: scaleY(1.1)
+        }
+        100% {
+            transform: scaleY(1)
+        }
+    }
+
     .navbarContainer ul li{
-        padding: 30px 0;
+        padding: 5px;
     }
-
-}
-.dropdown_menu{
-    animation: growDown 300ms ease-in-out forwards;
-    transform-origin: top center;
+    
 }
 
-@keyframes growDown {
-    0% {
-        transform: scaleY(0)
-    }
-    80% {
-        transform: scaleY(1.1)
-    }
-    100% {
-        transform: scaleY(1)
-    }
-}
+
 
 

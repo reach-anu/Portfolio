@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <div className='footerContainer'>
         <p>Developed &amp; Designed by Anushaka</p>
-        <div>
+        <div className='footerIconsContainer'>
         <IconContext.Provider value={{ className: 'footerIcons' }}>
             <a href="mailto:reachanuuu@gmail.com"><AiFillMail /></a>
             <a href="https://leetcode.com/anu_rm/"><TbBrandLeetcode /></a>

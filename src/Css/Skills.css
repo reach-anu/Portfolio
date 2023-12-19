@@ -1,18 +1,21 @@
-#skillContainer{
-    padding: 2rem 4rem;
+.skillsContainerWrapper{
+    margin: 3rem 6rem 2rem;
+    padding-top: 2rem;
 }
-#Skills h3{
-    margin: 0;
+
+.skillsContainer h3{
     text-align: center;
-    /* color:#8061d5; */
+    padding: 3rem 0rem 2rem;
 }
-#Skills .space{
+
+.skillsContainer .space{
     margin-left: 15px;
 }
+
 .skillsBox{
     display: flex;
     flex-wrap: wrap;
-    margin: 2rem 15%;
+    margin: 2rem 10%;
     justify-content: center;
     align-items: center;
 }
@@ -25,15 +28,26 @@
     border-radius: 5px;
     opacity: 1;
 }
+
 .skillIcons:hover{
     transform: scale(1.2);
     transition: all 0.5s;
     box-shadow: 0 8px 30px 1px hsla(0,0%,100%,.4);
 }
+
+@media (max-width: 785px){
+
+    .skillsBox{
+        margin: 2rem 8%;
+    }
+
+}
 @media (max-width: 609px){
+
     .skillsBox{
         margin: 2rem 1px;
     }
+
     .skillIcons{
         margin: 1rem 0.5rem;
         font-size: 50px;
@@ -42,10 +56,15 @@
         border-radius: 5px;
         opacity: 1;
     }
-}
 
-@media (max-width: 450px){
-    #Skills .space{
+}
+@media (max-width:580px) {
+
+    .skillsContainerWrapper{
+        margin: 2rem 40px 3rem;
+    }
+
+    .skillsContainer .space{
         display: block;
     }
     

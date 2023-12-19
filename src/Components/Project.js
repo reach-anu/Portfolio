@@ -8,21 +8,15 @@ import wiggles from "../Images/wiggles.png"
 import keeper from "../Images/keeper.png"
 
 const Project = () => {
+  const projectHeading="Projects";
   return (
-    <div id='Project'>
+    <div className='projectContainerWrapper' id='Project'>
     <motion.div 
     initial={{ x: 0, opacity: 0}}
     whileInView={{ x: [0], y:[-50,0], opacity: 1}}
     transition={{ duration: 1 }}>
     <h3>
-      <span>P</span>
-      <span>r</span>
-      <span>o</span>
-      <span>j</span>
-      <span>e</span>
-      <span>c</span>
-      <span>t</span>
-      <span>s</span>
+    {projectHeading.split("").map((char) => <span>{char}</span>)}
     </h3>
     </motion.div>
     <div className='projectCardContainer'>

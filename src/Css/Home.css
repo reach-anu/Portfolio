@@ -1,114 +1,141 @@
 .homeContainer{
-    margin: 6rem 6rem 0;
-    line-height: 4rem;
-    height: 430px;
+    margin: 3rem 6rem 3rem;
+    height: calc(100vh - 134px);
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    cursor: default;
 }
+
 .homeContainer img{
-    width: 520px;
+    min-width: 520px;
+    height: 100vh;
+    max-height: 850px;
     position: absolute;
     right: 6rem;
     top: 0px;
 }
+
 .homeContainer h1{
     font-size: inherit;
     font-weight: inherit;
     margin: 0px;
     line-height: 1.5;
-    cursor: default;
 }
-.homeContainer h3{
-    font-size: 3rem;
-    margin: 0px;
-    font-weight: inherit;
-    cursor: default;
-}
-.homeInfoContainer{
-    position: relative;
-}
+
 .myName{
     font-size: 3.2rem;
     margin: 0px;
     font-weight: 700;
+    line-height: 4rem;
 }
+
+.homeContainer h3{
+    font-size: 3rem;
+    margin: 0px;
+    font-weight: inherit;
+    line-height: 4rem;
+}
+
+.homeInfoContainer{
+    position: relative;
+    width:40%; 
+    min-width: 494px;
+}
+
+.connectIconscontainer{
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
 .connectIconsDisplay{
-    margin-top: 2.5rem;
-    margin-right: 1rem;
-    font-size: 35px;
+    font-size: 40px;
 }
+
 .connectIconsDisplay:hover{
     transition: all 0.3s;
     opacity: 0.5;
 }
+
 .homeContainer .space{
     padding-right: 10px;
 }
+
 .homeInfoContainer img{
     display: none;
 }
-@media (max-width: 1250px){
-    .homeContainer{
-        margin: 6rem 4rem;
-        line-height: inherit;
-    }
-    .homeContainer img{
-       width: 42%;
-       right: 0rem;
-    }
-}
-@media (max-width: 1050px){
-    .homeContainer{
-        margin: 6rem 1rem;
-    }
+
+@media (max-width: 1220px){
+
     .homeInfoContainer{
         margin: auto;
-        width: fit-content;
     }
+
     .homeContainer img{
         display: none;
     }
+
     .homeInfoContainer img{
-        display: block ;
+        display: block;
         position: absolute;
-        right: -60px;
-        top: calc(100% - 96px);
-        width: 65%;
+        right: -80px;
+        top: calc(100% - 140px);
+        width: 70%;
+        height: fit-content !important;
+        min-width: 200px !important;
+        max-height: none !important;
     }
+
     .homeContainer .space{
         padding-right: 5px;
     }
     
 }
+
 @media (max-width:680px){
+
+    .homeContainer{
+        margin: 2rem 6rem 3rem;
+    }
+
+    .homeInfoContainer{
+        min-width: 300px !important;
+    }
+
     .homeContainer h3{
-        font-size: 2rem;
+        font-size: 1.8rem;
+        line-height: 1.3;
     }
+
     .myName{
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+        line-height: 1.3;
     }
-    .connectIconsDisplay{
-        font-size: 2rem;
-        margin: 2rem 0.5rem;
-    }
-    .homeInfoContainer img{
-        right: auto;
-        top: 100%;
-        width: 100%;
-    }
-}
-@media (max-width: 430px){
-    .homeContainer h3{
-        font-size: 1.6rem;
-    }
-    .myName{
-        font-size: 1.9rem;
-    }
+
     .connectIconsDisplay{
         font-size: 1.5rem;
     }
 
-    .homeContainer .space{
-        padding-right: 6px;
+    .connectIconscontainer{
+        gap: 1rem;
+        margin-top: 1rem;
     }
+
+    .homeInfoContainer img{
+        right: auto;
+        top: 100%;
+    }
+    
+}
+@media (max-width: 580px){
+
+    .homeContainer{
+        margin: 2rem 20px 3rem;
+    }
+
 }
 
 

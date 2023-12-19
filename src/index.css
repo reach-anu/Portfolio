@@ -5,8 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-color: rgba(38, 37, 40, 0.99); */
-  background-color: black;
+  background-color: #000000;
+  background: linear-gradient(to right,#010311,#210938,#210937,#000105);
   color: white;
   overflow-x: hidden;
   line-height: inherit;
@@ -14,42 +14,73 @@ body {
   --tw-gradient-from: #9333ea;
   --tw-gradient-to: #3b82f6;
 }
+
 *,html{
   scroll-behavior: smooth;
 }
+
+html::-webkit-scrollbar{
+  width: .8vw !important;
+}
+
+html::-webkit-scrollbar-thumb{
+  background-image: linear-gradient(#aa66e9,#3b82f6);
+  border-radius: 100vw;
+}
+
+html::-webkit-scrollbar-track{
+  background:  radial-gradient( #1b2735 0%,#090a0f 100%);
+}
+
 #preloader{
   display: flex;
   align-items: center;
   width: 100%;
-  background-color: black;
   justify-content: center;
   min-height: 700px;
+  background-color: black;
 }
+
 #preloader img{
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
 }
+
 .gradient{
   color:transparent;
   background-image: linear-gradient(to right,var(--tw-gradient-stops));
   --tw-gradient-stops: var(--tw-gradient-from),var(--tw-gradient-to);
   background-clip: text;
 }
+
 a{
   text-decoration: none;
   color: white;
 }
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  list-style: none;
+}
+
 h3{
   color:#fff;
   font-weight: 700;
   font-size: 3rem;
   cursor: default;
+  margin-bottom: 0;
 }
+
 h3 span:hover{
   animation : rubberband 800ms  ease-out;
   color: #D0BFFF;
   display: inline-block;
 }
+
 @keyframes rubberband {
   0% {
       transform: scale(1, 1);
@@ -66,15 +97,17 @@ h3 span:hover{
 }
 }
 
-
 @media (max-width:785px){
+  
   h3{
     font-weight: 600;
     font-size: 2.5rem;
   }
+
 }
 
 @media (max-width:580px){
+  
   h3{
     font-weight: 600;
     font-size: 2.2rem;
