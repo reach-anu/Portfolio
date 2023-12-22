@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState,useEffect} from 'react'
 import "../Css/Skills.css"
 import { motion } from 'framer-motion'
 import { IconContext } from 'react-icons'
@@ -7,7 +7,21 @@ import {SiExpress, SiVisualstudio, SiCplusplus, SiPostman} from "react-icons/si"
 import {FaBootstrap, FaGitAlt, FaGithub, FaFigma} from "react-icons/fa"
 
 const Skills = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   const skillsHeading="Professional Skills";
+  
   return (
     <div className='skillsContainerWrapper' id='Skills'>
       <motion.div 
@@ -16,7 +30,7 @@ const Skills = () => {
       whileInView={{opacity: 1, y:[0] ,scale: 1}}
       transition={{ duration: 0.8 }}>
       <h3>
-        {skillsHeading.split("").map((char)=> char===" " ? ( window.innerWidth===392 ? <br/> : " " ) : <span>{char}</span>)}
+        {skillsHeading.split("").map((char)=> char === " " ? (windowWidth <= 400 ? <br /> : " ") : <span>{char}</span>)}
       </h3>
       </motion.div>
       <motion.div  
