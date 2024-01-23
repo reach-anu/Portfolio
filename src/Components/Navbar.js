@@ -6,7 +6,6 @@ import {BsCodeSlash} from "react-icons/bs"
 import {IoCallOutline,IoDocumentTextOutline,IoReorderThreeOutline} from "react-icons/io5"
 import {RxCross1} from "react-icons/rx"
 import { IconContext } from 'react-icons'
-import { motion } from 'framer-motion'
 import { NavHashLink } from 'react-router-hash-link';
 
 const Navbar = () => {
@@ -18,7 +17,7 @@ const Navbar = () => {
 
   return (
     <nav className='navbarContainer'>
-    <img onClick={()=>window.scrollTo(0,0)} src={memoji} />
+    <img onClick={()=>window.scrollTo(0,0)} src={memoji} alt='navimg'/>
     <ul className='maxScreenSizeMenu'>
       <li><NavHashLink to='/#About'>About</NavHashLink></li>
       <li><NavHashLink to='/#Project'>Project</NavHashLink></li>

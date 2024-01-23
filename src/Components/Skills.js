@@ -1,10 +1,18 @@
 import React, {useState,useEffect} from 'react'
 import "../Css/Skills.css"
 import { motion } from 'framer-motion'
-import { IconContext } from 'react-icons'
 import {IoLogoJavascript, IoLogoReact, IoLogoNodejs,IoLogoCss3, IoLogoHtml5} from "react-icons/io5"
 import {SiExpress, SiVisualstudio, SiCplusplus, SiPostman} from "react-icons/si"
 import {FaBootstrap, FaGitAlt, FaGithub, FaFigma} from "react-icons/fa"
+
+const SkillBox = ({Reacticon, title}) => {
+  return (
+    <div className='skillIconContainer'>
+        <Reacticon className='reactIcon'/>
+        <div className='overlay'>{title}</div>
+    </div>
+  )
+}
 
 const Skills = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -39,24 +47,23 @@ const Skills = () => {
       whileInView={{opacity: 1}}
       transition={{ duration: 1}}
       >
-        <IconContext.Provider value={{className: 'skillIcons'}}>
-          <IoLogoJavascript title="Javascript"/>
-          <IoLogoReact title="ReactJS" />
-          <IoLogoNodejs title="NodeJS" />
-          <SiExpress title="ExpressJS" />
-          <FaGitAlt title="Git" />
-          <FaGithub title="Github" />
-          <IoLogoCss3 title="CSS3" />
-          <FaBootstrap title="Bootstrap" />
-          <IoLogoHtml5 title="HTML5" />
-          <FaFigma title="Figma" />
-          <SiVisualstudio title="Visual studio code" />
-          <SiCplusplus title="C++" />
-          <SiPostman title="Postman" />
-        </IconContext.Provider>
+        <SkillBox Reacticon={IoLogoJavascript} title="Javascript"/>
+        <SkillBox Reacticon={IoLogoReact} title="ReactJS" />
+        <SkillBox Reacticon={IoLogoNodejs} title="NodeJS" />
+        <SkillBox Reacticon={SiExpress} title="ExpressJS" />
+        <SkillBox Reacticon={FaGitAlt} title="Git" />
+        <SkillBox Reacticon={FaGithub} title="Github" />
+        <SkillBox Reacticon={IoLogoCss3} title="CSS3" />
+        <SkillBox Reacticon={FaBootstrap}title="Bootstrap" />
+        <SkillBox Reacticon={IoLogoHtml5} title="HTML5" />
+        <SkillBox Reacticon={FaFigma} title="Figma" />
+        <SkillBox Reacticon={SiVisualstudio} title="Visual studio code" />
+        <SkillBox Reacticon={SiCplusplus} title="C++" />
+        <SkillBox Reacticon={SiPostman} title="Postman" />
       </motion.div>
     </div>
   )
 }
+
 
 export default Skills

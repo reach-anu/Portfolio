@@ -1,7 +1,6 @@
 .aboutContainerWrapper{
   margin: 3rem 6rem 2rem;
   padding-top: 2rem;
-  /* min-height: 80vh; */
   max-height: fit-content;
 }
 
