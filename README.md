@@ -21,7 +21,10 @@ Personal portfolio showcasing skills and projects, built with React.js and is co
 
 ## Contributing
 
-Don't forget to star 🌟 the repository if you find it helpful!
-Feel free to modify the code and make it your own (with proper credits). 
+Don't forget to star 🌟 the repository if you find it helpful.  
+Feel free to modify the code and make it your own (with proper credits).   
 If you find any 🐛 or issues, feel free to highlight.
+
+---
+
 
