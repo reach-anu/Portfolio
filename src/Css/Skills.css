@@ -1,94 +1,104 @@
-.skillsContainerWrapper{
-    margin: 3rem 6rem 2rem;
-    padding-top: 2rem;
+.skillsContainerWrapper {
+  margin: 3rem 6rem 2rem;
+  padding-top: 2rem;
 }
 
-.skillsContainer h3{
-    text-align: center;
-    padding: 3rem 0rem 2rem;
+.skillsContainer h3 {
+  text-align: center;
+  padding: 3rem 0rem 2rem;
 }
 
-.skillsContainer .space{
-    margin-left: 15px;
+.skillsContainer .space {
+  margin-left: 15px;
 }
 
-.skillsBox{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 2rem 10%;
-    justify-content: center;
-    align-items: center;
+.skillsBox {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem 10%;
+  justify-content: center;
+  align-items: center;
 }
 
-.skillIconContainer{
-    margin: 1.2rem 1rem;
-    font-size: 65px;
-    padding: 2.2rem;
-    border: solid 0.5px #D0BFFF;
-    border-radius: 5px;
-    opacity: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+.skillIconContainer {
+  margin: 1.2rem 1rem;
+  font-size: 65px;
+  padding: 2.2rem;
+  border: solid 0.5px #d0bfff;
+  border-radius: 5px;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
-.overlay{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 0;
-    transition: all 0.5s;
-    width: 100%;
-    font-size: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background: linear-gradient(to top, rgba(255, 255, 255, 0.3) , rgba(255, 255, 255, 0)); 
+.iconTitleContainer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0;
+  transition: all 0.5s;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0)
+  );
+  overflow: hidden;
 }
 
-.skillIconContainer:hover .reactIcon{
+.skillIconContainer:hover .reactIcon {
+  visibility: hidden;
+}
+
+.skillIconContainer:hover .iconTitleContainer {
+  height: 100%;
+}
+.skillIconContainer .iconTitleContainer .iconTitle {
+  font-size: 18px;
+  visibility: hidden;
+  font-weight: 500;
+}
+.skillIconContainer:hover .iconTitleContainer .iconTitle {
+  visibility: visible;
+}
+
+@media (max-width: 785px) {
+  .skillsBox {
+    margin: 2rem 8%;
+  }
+}
+@media (max-width: 609px) {
+  .skillsBox {
+    margin: 2rem 1px;
+  }
+
+  .skillIconContainer {
+    margin: 1rem 0.5rem;
+    font-size: 50px;
+    padding: 1.5rem;
+  }
+
+  .skillIconContainer:hover .iconTitleContainer {
+    font-size: 15px;
+  }
+}
+@media (max-width: 580px) {
+  .skillsContainerWrapper {
+    margin: 2rem 40px 3rem;
+  }
+
+  .skillsContainer .space {
+    display: block;
+  }
+  .skillIconContainer .iconTitleContainer .iconTitle {
+    font-size: 14px;
     visibility: hidden;
-}
-
-.skillIconContainer:hover .overlay{
-    height: 100%;
-    font-size: 18px;
-}
-
-
-@media (max-width: 785px){
-
-    .skillsBox{
-        margin: 2rem 8%;
-    }
-
-}
-@media (max-width: 609px){
-
-    .skillsBox{
-        margin: 2rem 1px;
-    }
-
-    .skillIconContainer{
-        margin: 1rem 0.5rem;
-        font-size: 50px;
-        padding: 1.5rem;
-    }
-
-    .skillIconContainer:hover .overlay{
-        font-size: 15px;
-    }
-}
-@media (max-width:580px) {
-
-    .skillsContainerWrapper{
-        margin: 2rem 40px 3rem;
-    }
-
-    .skillsContainer .space{
-        display: block;
-    }
-    
+    font-weight: 500;
+  }
 }
